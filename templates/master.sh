@@ -18,7 +18,7 @@ apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 curl -sSL https://get.docker.com/ | sh
 systemctl start docker
 
-kubeadm init --token=${k8stoken} --use-kubernetes-version v1.4.3
+kubeadm init --token=${k8stoken} --use-kubernetes-version v1.6.4
 
 kubectl apply -f https://git.io/weave-kube
 
